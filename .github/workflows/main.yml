@@ -14,21 +14,21 @@ jobs:
         run: |
           cd formatter_lib
           cmake -H. -B_build
-          cmake --build_build
+          cmake --build _build
           
       - name: formatter_ex_lib
         shell: bash
         run: |
           cd formatter_ex_lib
           cmake -H. -B_build
-          cmake --build_build
+          cmake --build _build
           
       - name: solver_lib
         shell: bash
         run: |
           cd solver_lib
           cmake -H. -B_build
-          cmake --build_build
+          cmake --build _build
   Build_Hello_World:
     runs-on: ubuntu-latest
     steps:
