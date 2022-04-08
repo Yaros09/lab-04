@@ -19,9 +19,10 @@ jobs:
       - name: formatter_ex_lib
         shell: bash
         run: |
-          cd formatter_ex_lib
-          cmake -H. -B_build
-          cmake --build _build
+          mkdir _build
+          cd _build
+          cmake ..
+          cmake --build .
           
       - name: solver_lib
         shell: bash
