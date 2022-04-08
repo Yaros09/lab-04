@@ -5,9 +5,9 @@
 
 int main(int argc, char* argv[])
 {
-    float a = int(*char[1])-48;
-    float b = int(*char[2])-48;
-    float c = int(*char[3])-48;
+    float a = int(*argv[1])-48;
+    float b = int(*argv[2])-48;
+    float c = int(*argv[3])-48;
 
     std::cin >> a >> b >> c;
 
