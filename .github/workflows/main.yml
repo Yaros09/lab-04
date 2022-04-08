@@ -1,7 +1,8 @@
 name: formatter_apl
 on:
   push:
-    branches: -main
+    branches: 
+      - main
 
 jobs:
   Libraries:
